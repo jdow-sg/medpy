@@ -20,6 +20,7 @@ template <typename captype, typename tcaptype, typename flowtype>
 	nodes = (node*) malloc(node_num_max*sizeof(node));
 	arcs = (arc*) malloc(2*edge_num_max*sizeof(arc));
 	if (!nodes || !arcs) { if (error_function) (*error_function)("Not enough memory!"); exit(1); }
+/*memory_check*/ //std::cout << "Memory allocated for nodes and arcs" << std::endl;
 
 	node_last = nodes;
 	node_max = nodes + node_num_max;
