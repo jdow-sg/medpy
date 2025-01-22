@@ -39,7 +39,7 @@ template <typename captype, typename tcaptype, typename flowtype>
 		delete nodeptr_block;
 		nodeptr_block = NULL;
 	}
-	free(nodes);
+	
 	free(arcs);
 }
 
